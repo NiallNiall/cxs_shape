@@ -1,6 +1,6 @@
 import megamu.mesh.*;
 
-int maxPoints = 50;
+int maxPoints = 15;
 
 float[][] points = new float[maxPoints][2];
 
@@ -60,11 +60,13 @@ void setup() {
 }
 
 void draw() {
-  background(0);
+  
+
+  background(42,48,63);
   
   
     noStroke();
-  fill(250);
+  fill(228,26,67);
   for (int i=0; i<vecPoints.length; i++) {
     //println(vecPoints[i]);
     ellipse(vecPoints[i].x, vecPoints[i].y, 10, 10);
@@ -79,7 +81,7 @@ void draw() {
   //lineLength += 0.5;
 
 
-  stroke(250);
+  stroke(228,26,67);
   strokeWeight(3.0);
 
   //for (int i=0; i<myEdges.length; i++)

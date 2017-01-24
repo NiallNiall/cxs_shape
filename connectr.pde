@@ -42,7 +42,7 @@ class connectr {
     //float newX = start.x + cos(angle) * cLength;
     //float newY = start.y + sin(angle) * cLength;
     
-    stroke(250,150);
+    stroke(228,26,67,150);
     line(start.x, start.y, newEnd.x, newEnd.y); 
   }
   
