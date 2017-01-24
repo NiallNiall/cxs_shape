@@ -34,7 +34,7 @@ class connectr {
     if(percentSpeed < 0.99999 )
     {
        percentSpeed +=0.01;
-       penneredSpeed = easeInOutQuart(percentSpeed);
+       penneredSpeed = easeOutExpo(percentSpeed);
        //println(value);
     }
 

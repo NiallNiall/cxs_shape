@@ -6,6 +6,8 @@ float[][] points = new float[maxPoints][2];
 
 PVector[] vecPoints = new PVector[maxPoints];
 
+float[] randomCircSize = new float[maxPoints];
+
 Delaunay myDelaunay;
 
 float[][] myEdges;
@@ -34,6 +36,7 @@ void setup() {
 
     vecPoints[i] = new PVector(point1, point2);
     //vecPoints[0].y = 200;//point2;
+    randomCircSize[i] = random(5, 20);
   }
 
 
@@ -69,7 +72,7 @@ void draw() {
   fill(228,26,67);
   for (int i=0; i<vecPoints.length; i++) {
     //println(vecPoints[i]);
-    ellipse(vecPoints[i].x, vecPoints[i].y, 10, 10);
+    ellipse(vecPoints[i].x, vecPoints[i].y, randomCircSize[i], randomCircSize[i]);
   }
   
   if(startAnim){
